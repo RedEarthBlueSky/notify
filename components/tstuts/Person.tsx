@@ -1,12 +1,21 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-const Person = () => {
+//  typing an object prop...
+
+type PersonProps = {
+    title: string,
+    first: string, 
+    last: string,
+}
+
+const Person = (props: PersonProps) => {
+    const { title, first, last } = props.name
     return ( 
         <View>
-            <Text>Bruce Wayne</Text>
+            <Text>{title} {first} {last}</Text>
         </View> 
     )
 }
 
-export default Person
+export {Person}

@@ -2,22 +2,30 @@ import * as React from 'react';
 import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
-import Greet from '../components/tstuts/Greet'
-import Person from '../components/tstuts/Person'
+import {Greet, Person, PersonList} from '../components/tstuts'
 import { Text, View } from '../components/Themed';
 
 export default function TabThreeScreen() {
+  const personName = {
+    title: 'Mr.',
+    first: 'Bruce',
+    last: 'Wayne'
+  }
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab Three</Text>
-      <Person />
+      <Person name={personName}/>
       <Greet 
-        name='Ian' 
-        messageCount={10} 
+        name='Bruce' 
+        messageCount={3} 
         isLoggedIn={true}
       />
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabThreeScreen.tsx" />
+      <PersonList />
+      <View 
+        style={styles.separator} 
+        lightColor="#eee" 
+        darkColor="rgba(255,255,255,0.1)" />
+      <EditScreenInfo path="/screens/TabThreeScreen.tsx"/>
     </View>
   );
 }

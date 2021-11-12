@@ -15,7 +15,7 @@ const Greet = (props: GreetProps) => {
             {
                 isLoggedIn ? 
                 `
-                Welcome, ${name}, you've ${messageCount} messages!
+                Welcome, ${name}, you've ${messageCount} guests!
                 `
                 : 
                 'Welcome Guest.'
@@ -26,4 +26,4 @@ const Greet = (props: GreetProps) => {
     )
 }
 
-export default Greet
+export {Greet}
