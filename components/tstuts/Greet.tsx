@@ -15,7 +15,7 @@ const Greet = (props: GreetProps) => {
             {
                 isLoggedIn ? 
                 `
-                Welcome, ${name}, you've ${messageCount} guests!
+                Hi, ${name}, your ${messageCount} favorite games!
                 `
                 : 
                 'Welcome Guest.'

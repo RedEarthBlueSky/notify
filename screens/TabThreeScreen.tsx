@@ -2,25 +2,27 @@ import * as React from 'react';
 import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
-import {Greet, Person, PersonList} from '../components/tstuts'
+import {Greet, Person, GameList} from '../components/tstuts'
 import { Text, View } from '../components/Themed';
+
+
 
 export default function TabThreeScreen() {
   const personName = {
     title: 'Mr.',
-    first: 'Bruce',
-    last: 'Wayne'
+    first: 'Ian',
+    last: 'Salt'
   }
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab Three</Text>
       <Person name={personName}/>
       <Greet 
-        name='Bruce' 
-        messageCount={3} 
+        name='Ian' 
+        messageCount={4} 
         isLoggedIn={true}
       />
-      <PersonList />
+      <GameList />
       <View 
         style={styles.separator} 
         lightColor="#eee" 
@@ -41,7 +43,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   separator: {
-    marginVertical: 30,
+    marginVertical: 10,
     height: 1,
     width: '80%',
   },

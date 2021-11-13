@@ -1,13 +1,9 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-//  typing an object prop...
+import { PersonProps } from './types'
 
-type PersonProps = {
-    title: string,
-    first: string, 
-    last: string,
-}
+//  typing an object prop...
 
 const Person = (props: PersonProps) => {
     const { title, first, last } = props.name
