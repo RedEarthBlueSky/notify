@@ -9,9 +9,11 @@ const GameList = () => {
 				<ScrollView>
 				{
 					data.map((item) => (
-						<View>
-							<Text>{item.title}</Text>
+						<View key={item.id}>
+							<Text>{item.id}: {item.title}</Text>
 							<Text>{item.developer}</Text>
+							{/*  Make images display horizontal */}
+							<ScrollView horizontal>
 							{
 								item.images.map(image =>[
 									<Image 
@@ -20,6 +22,7 @@ const GameList = () => {
 									/>
 								])
 							}
+							</ScrollView>
           </View>
         ))
        }

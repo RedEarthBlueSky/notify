@@ -7,6 +7,8 @@ export const data: Collection = [
         images: [
             'https://art.pixilart.com/05b69d5a1d184f9.gif',
             'https://art.pixilart.com/ee731822e4188fd.png',
+            'https://art.pixilart.com/05b69d5a1d184f9.gif',
+            'https://art.pixilart.com/ee731822e4188fd.png',
         ],
         developer: 'CD Project Red',
     },
@@ -16,6 +18,8 @@ export const data: Collection = [
         images: [
             'https://art.pixilart.com/c4b46b7996c02b7.png',
             'https://art.pixilart.com/thumb/59d6e7d8adeb761.png',
+            'https://art.pixilart.com/05b69d5a1d184f9.gif',
+            'https://art.pixilart.com/ee731822e4188fd.png',
         ],
         developer: 'Bioware',
     },
@@ -25,6 +29,8 @@ export const data: Collection = [
         images: [
             'https://art.pixilart.com/thumb/526413cb2e0953d.png',
             'https://art.pixilart.com/caec49633b0031a.gif',
+            'https://art.pixilart.com/05b69d5a1d184f9.gif',
+            'https://art.pixilart.com/ee731822e4188fd.png',
         ],
         developer: 'Bioware',
     },
@@ -34,6 +40,8 @@ export const data: Collection = [
         images: [
             'https://art.pixilart.com/thumb/526413cb2e0953d.png',
             'https://art.pixilart.com/caec49633b0031a.gif',
+            'https://art.pixilart.com/05b69d5a1d184f9.gif',
+            'https://art.pixilart.com/ee731822e4188fd.png',
         ],
         developer: 'CD Project Red',
     },
